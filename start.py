@@ -28,7 +28,7 @@ for event in longpoll.listen():
             if event.message.text.split()[0].lower() == 'расшифровать':
                 sh = True
             vk.messages.send(
-                message='Принято. Теперь введи сдвиг (только число)',
+                message='Принято. Теперь введи сдвиг (число)',
                 peer_id=event.message.from_id,
                 random_id=get_random_id()
             )
